@@ -1,0 +1,28 @@
+applications:
+- name: demo-controller
+  memory: 32M
+  instances: 1
+  services:
+    demo-mq: rabbitmq3
+  timeout: 30
+  stackato:
+    description: Controller
+    env:
+      stackatoAOKURL:
+        default: 'https://aok/uaa/oauth/token?username=admin&password=&grant_type=password'
+      stackatoURL:
+        default: 'https://api'
+      appName:
+        default: 'demo-consumer'
+      queueName:
+        default: 'demo-queue'
+    ignores:
+      - .git
+      - .gitignore
+      - bin
+      - demo-controller
+      - demo-controller.exe
+      - instances
+      - queuelen
+      - stakatoauth
+      - tmp

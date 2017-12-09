@@ -1,0 +1,21 @@
+{
+	"ImportPath": "Microservices/demo-controller",
+	"GoVersion": "go1.9",
+	"GodepVersion": "v79",
+	"Deps": [
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Comment": "v1.4.0-4-g85b8c20",
+			"Rev": "85b8c203a414fa3650401cd5c6aa926dd1e275d9"
+		},
+		{
+			"ImportPath": "github.com/gorilla/websocket",
+			"Comment": "v1.2.0-22-gc55883f",
+			"Rev": "c55883f97322b4bcbf48f734e23d6ab3af1ea488"
+		},
+		{
+			"ImportPath": "github.com/streadway/amqp",
+			"Rev": "dfe15e36048539f4cda41f240b27a5ca25b9cd46"
+		}
+	]
+}
